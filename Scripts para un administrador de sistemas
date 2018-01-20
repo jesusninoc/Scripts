@@ -14,8 +14,31 @@ find /server/default/log/* -type f -mtime +$LOGSTTL -exec rm -f {} \;
 
 ####################################################################################
 #-Analizar espacio en disco
+#http://linux.101hacks.com/monitoring-performance/df-command-examples/
 df
 df -h
+#http://linux.101hacks.com/monitoring-performance/du-command-examples/
+du
+####################################################################################
+
+####################################################################################
+#-Using blkid command you can view attributes of block devices that are on your system
+#https://linux.101hacks.com/unix/blkid/
+####################################################################################
+
+####################################################################################
+#-Iostat command reports CPU and I/O statistics
+#https://linux.101hacks.com/unix/iostat/
+####################################################################################
+
+####################################################################################
+#For a typical performance monitoring all you need is only vmstat command. 
+#http://linux.101hacks.com/monitoring-performance/vmstat-command-examples/
+####################################################################################
+
+####################################################################################
+#-Lsof stands for ls open files, which will list all the open files in the system
+#https://linux.101hacks.com/monitoring-performance/lsof-command-examples/
 ####################################################################################
 
 ####################################################################################

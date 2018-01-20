@@ -2,6 +2,7 @@
 function ejemplo(){
   echo "Ejemplo función"
 }
+ejemplo
 
 #Fechas
 FECHA=$(date +%m%d)

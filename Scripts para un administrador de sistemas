@@ -1,1 +1,7 @@
--Copias de seguridad
+#-Copias de seguridad
+
+#-Borrado de información antigua
+export LOGSTTL=5
+find /server/default/log/* -type f -mtime +$LOGSTTL -exec rm -f {} \;
+
+#-Analizar logs

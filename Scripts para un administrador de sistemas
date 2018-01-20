@@ -55,3 +55,18 @@ ps -e -orss=,args= | sort -b -k1,1n
 #-Analizar memoria
 free
 ####################################################################################
+
+####################################################################################
+#Script que monitorice conexiones a Apache
+#Script que monitorice conexiones netstat
+#Script que revise bloqueos ping masivo, fichero que se ven bloqueos
+#Reiniciar cada cierto tiempo apache y mysql
+#Reiniciar cuando tengan muchas peticiones
+#Bloquear a los que hacen muchas peticiones a Apache
+#Bloquear con csf -d
+#Monitorizar cuando el consumo supera 100%
+#Analizar firewall
+#Qué información se puede analizar de los logs?
+#Qué información se puede analizar de mysql?
+#Ver fallos de acceso, hay algún fallo nuevo?
+####################################################################################

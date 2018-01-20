@@ -6,13 +6,15 @@ ejemplo
 
 #Fechas
 FECHA=$(date +%m%d)
+echo $FECHA
 FECHACOMPLETA=$(date +%Y%m%d)
+echo $FECHACOMPLETA
 
 #Leer contenido de fichero
 cat fichero.txt
 
 #Switch
-case "$2" in
+case hoy in
           hoy)
                 FECHA=$(date +%Y-%m-%d)
                 ;;
@@ -26,9 +28,8 @@ case "$2" in
                 FECHA=$(date +%Y-%m-%d -d "+ 3 day")
                 ;;
         *)
-		usage
-                ;;
 esac
+echo $FECHA
 
 #Screen
 #https://dreyacosta.com/jugando-con-screen-un-manejador-de-sesiones-linux/

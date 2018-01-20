@@ -1,0 +1,41 @@
+#Funciones
+function ejemplo(){
+  echo "Ejemplo función"
+}
+
+#Fechas
+FECHA=$(date +%m%d)
+FECHACOMPLETA=$(date +%Y%m%d)
+
+#Leer contenido de fichero
+cat fichero.txt
+
+#Switch
+case "$2" in
+          hoy)
+                FECHA=$(date +%Y-%m-%d)
+                ;;
+        manana)
+                FECHA=$(date +%Y-%m-%d -d "+ 1 day")
+                ;;
+        pasadomanana)
+                FECHA=$(date +%Y-%m-%d -d "+ 2 day")
+                ;;
+        pasadomananamanana)
+                FECHA=$(date +%Y-%m-%d -d "+ 3 day")
+                ;;
+        *)
+		usage
+                ;;
+esac
+
+#Screen
+#https://dreyacosta.com/jugando-con-screen-un-manejador-de-sesiones-linux/
+
+#Utilizar programas
+barcode
+#https://www.gnu.org/software/barcode/
+ps2pdf
+#https://www.linux.com/learn/creating-pdf-files-ps2pdf
+xsltproc
+#http://xmlsoft.org/XSLT/xsltproc2.html

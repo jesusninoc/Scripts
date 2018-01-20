@@ -5,3 +5,14 @@ export LOGSTTL=5
 find /server/default/log/* -type f -mtime +$LOGSTTL -exec rm -f {} \;
 
 #-Analizar logs
+
+#-Analizar espacio en disco
+df
+df -h
+
+#-Analizar procesos
+htop
+ps -ef
+
+#-Analizar memoria
+free

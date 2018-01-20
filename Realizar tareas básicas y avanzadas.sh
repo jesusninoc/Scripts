@@ -1,5 +1,5 @@
 #! /bin/bash
-# Script que realiza las siguientes operaciones:
+# Script que realiza las siguientes tareas:
 # Listar-Ficheros
 # Crear-Fichero
 # Leer-Ficheros
@@ -16,7 +16,7 @@
 # Eliminar-Grupo
 # Tarea-Programada
 
-echo "Seleccione una de las siguientes operaciones:"
+echo "Seleccione una de las siguientes tareas:"
 echo "Listar-Ficheros, Crear-Fichero, Leer-Ficheros, Copiar-Fichero, Mover-Fichero, Eliminar-Fichero, Permisos, Instalar-Paquete, Matar-Process, Crear-User, Desactivar-User, Eliminar-User, Crear-Grupo, Eliminar-Grupo, Tarea-Programada" 
 read opc
 case $opc in

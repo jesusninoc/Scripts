@@ -11,6 +11,11 @@ find /server/default/log/* -type f -mtime +$LOGSTTL -exec rm -f {} \;
 ####################################################################################
 #Analizar logs
 ####################################################################################
+tail -f access.log
+tail -f access.log | awk '{ print $10 }'
+tail -f access.log | awk '{ print $14 }'
+tail -f access.log | awk '{ print $16 }'
+tail -f access.log | awk '{ print $18 }'
 
 ####################################################################################
 #Analizar espacio en disco

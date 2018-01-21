@@ -1,3 +1,4 @@
+FECHA=`date +%Y%m%d%H%M`
 OUTFILETABLES="/opt/backup/$FECHA.estructura.sql"
 OUTFILE="/opt/backup/$FECHA.sql"
 

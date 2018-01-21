@@ -43,6 +43,7 @@ echo $FECHA
 #Screen
 #https://dreyacosta.com/jugando-con-screen-un-manejador-de-sesiones-linux/
 ####################################################################################
+screen
 
 ####################################################################################
 #Montar dispositivos y particiones para su uso por el sistema operativo
@@ -58,16 +59,19 @@ mount
 #Using blkid command you can view attributes of block devices that are on your system
 #https://linux.101hacks.com/unix/blkid/
 ####################################################################################
+blkid
 
 ####################################################################################
 #Iostat command reports CPU and I/O statistics
 #https://linux.101hacks.com/unix/iostat/
 ####################################################################################
+iostat
 
 ####################################################################################
 #For a typical performance monitoring all you need is only vmstat command. 
 #http://linux.101hacks.com/monitoring-performance/vmstat-command-examples/
 ####################################################################################
+vmstat
 
 ####################################################################################
 #Lsof stands for ls open files, which will list all the open files in the system
@@ -79,18 +83,28 @@ lsof
 #barcode
 #https://www.gnu.org/software/barcode/
 ####################################################################################
+barcode
 
 ####################################################################################
 #ps2pdf
 #https://www.linux.com/learn/creating-pdf-files-ps2pdf
 ####################################################################################
+ps2pdf
 
 ####################################################################################
 #xsltproc
 #http://xmlsoft.org/XSLT/xsltproc2.html
 ####################################################################################
+xsltproc
 
 ####################################################################################
 #mtr
 #https://linux.die.net/man/8/mtr
 ####################################################################################
+mtr
+
+####################################################################################
+#history
+#Comandos ejecutados por el usuario
+####################################################################################
+history

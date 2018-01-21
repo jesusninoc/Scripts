@@ -16,6 +16,13 @@ tail -f access.log | awk '{ print $10 }'
 tail -f access.log | awk '{ print $14 }'
 tail -f access.log | awk '{ print $16 }'
 tail -f access.log | awk '{ print $18 }'
+tail -f access.log | grep GET
+
+grep 8.8.8.8 access.log | wc -l
+
+zgrep -i 'mysql server' error.log.gz | cut -d ' ' -f 16-
+
+ssh 10.150.0.1 zgrep 8.8.8.8 /var/log/apache2/access.log.* > log.txt
 
 ####################################################################################
 #Analizar espacio en disco

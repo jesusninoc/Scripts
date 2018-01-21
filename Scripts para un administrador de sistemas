@@ -45,9 +45,14 @@ free
 ####################################################################################
 iptables -F
 iptables -X
+
 iptables -N NOMBRE
 iptables -A INPUT -s 10.150.0.0/16 -j REDIN
 iptables -A REDIN -j ACCEPT
+
+iptables -N BLOQUEAR
+iptables -A INPUT -s 8.8.8.8 -j BLOQUEAR
+iptables -A BLOQUEAR -j DROP
 
 ####################################################################################
 #Script que monitorice conexiones a Apache

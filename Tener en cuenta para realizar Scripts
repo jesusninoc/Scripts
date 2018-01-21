@@ -40,6 +40,17 @@ esac
 echo $FECHA
 
 ####################################################################################
+#MySQL
+####################################################################################
+show processlist;
+create database basedatos;
+use basedatos
+show tables;
+drop database basedatos;
+CREATE USER 'root'@'10.0.0.1' IDENTIFIED BY 'basedatos';
+select count(*) FROM cache_form where expire < UNIX_TIMESTAMP(NOW());
+
+####################################################################################
 #Screen
 #https://dreyacosta.com/jugando-con-screen-un-manejador-de-sesiones-linux/
 ####################################################################################
@@ -113,3 +124,8 @@ history
 #bash_history
 ####################################################################################
 bash_history
+
+####################################################################################
+#mysql_history
+####################################################################################
+mysql_history

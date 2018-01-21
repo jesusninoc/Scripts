@@ -91,4 +91,5 @@ iptables -A BLOQUEAR -j DROP
 #Qué información se puede analizar de los logs?
 #Qué información se puede analizar de mysql?
 #Ver fallos de acceso, hay algún fallo nuevo?
+#Enviar mails masivos
 ####################################################################################

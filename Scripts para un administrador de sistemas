@@ -55,13 +55,25 @@ free
 ####################################################################################
 #iptables
 ####################################################################################
+#Reset
+ufw disable
+ufw --force reset
 iptables -F
 iptables -X
+iptables -t nat -F
+iptables -t nat -X
+iptables -t mangle -F
+iptables -t mangle -X
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
 
+#Accept
 iptables -N NOMBRE
 iptables -A INPUT -s 10.150.0.0/16 -j REDIN
 iptables -A REDIN -j ACCEPT
 
+#Drop
 iptables -N BLOQUEAR
 iptables -A INPUT -s 8.8.8.8 -j BLOQUEAR
 iptables -A BLOQUEAR -j DROP

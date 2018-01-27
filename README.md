@@ -1,2 +1,1 @@
-# Scripts
-Listado de scripts
+# Listado de scripts

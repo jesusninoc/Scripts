@@ -89,7 +89,8 @@ app.post('/', function (req, res) {
 // Dejar el servidor en el puerto 3000
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
-})```
+})
+```
 
 ```XHTML
 <!DOCTYPE html>
@@ -110,7 +111,8 @@ app.listen(3000, function () {
       </fieldset>
     </div>
   </body>
-</html>```
+</html>
+```
 
 ```CSS
 /*
@@ -186,4 +188,5 @@ fieldset {
 }
 p {
   color: #E64A19;
-}```
+}
+```
